@@ -1,1 +1,5 @@
 *.txt
+# ignore Intellij IDEA files
+*.iml
+/.idea/
+/target
