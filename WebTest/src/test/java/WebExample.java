@@ -27,12 +27,7 @@ public class WebExample {
         webDriver.findElement(By.xpath("//a[@href='/watch?v=WHZPEkZCqwA' and @dir]")).click();
         Thread.sleep(9000);
     }
-    @After
-    public void shoutDown1() {
-        if (webDriver != null) {
-            webDriver.quit();
-        }
-    }
+
     @Test
     public void logIn() throws IOException, InterruptedException, AWTException {
         Robot r = new Robot();
