@@ -46,7 +46,7 @@ public class InstagramTest {
         List<WebElement> webEl = webDriver.findElements(By.xpath("//div[@class='_jjzlb']/img"));
         Set<String> linkSet = new HashSet<>();
         for (WebElement el : webEl) {
-            linkSet.add(check.Regchecking(el.getAttribute("src")));
+            linkSet.add(check.regchecking(el.getAttribute("src")));
         }
         for (String s : linkSet) {
             down.saver(s, ImageDownload.FILE_WAY);
