@@ -14,7 +14,7 @@ public class WebExample {
 
     @Before
     public void setUp() {
-        System.setProperty("webdriver.chrome.driver", "Z:/Downloads/chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "C:\Users\Denys_Pastushenko\Downloads\DownloadsSoft/chromedriver.exe");
         webDriver = new ChromeDriver();
         webDriver.manage().window().maximize();
         webDriver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
